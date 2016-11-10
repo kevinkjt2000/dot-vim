@@ -11,7 +11,7 @@ pkg.install() {
 pkg.link() {
   fs.link_file vimrc
   mkdir -p ~/.vim/bundle
-  fs.link_file $PKG_PATH/vim/bundle/Vundle.vim ~/.vim/bundle/Vundle.vim
+  fs.link_file vim/bundle/Vundle.vim ~/.vim/bundle/Vundle.vim
 }
 
 pkg.pull() {
