@@ -1,1 +1,0 @@
-/home/kevin/.ellipsis/packages/vim/vim/bundle/Vundle.vim
