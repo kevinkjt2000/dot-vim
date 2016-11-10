@@ -63,7 +63,7 @@ augroup END " }
 " cool colors (requires a 24-bit terminal)
 set termguicolors
 syntax enable
-colorscheme solarized8_dark
+silent! colorscheme solarized8_dark
 set t_8f=[38;2;%lu;%lu;%lum
 set t_8b=[48;2;%lu;%lu;%lum
 
