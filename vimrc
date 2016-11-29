@@ -1,8 +1,11 @@
+let s:editor_root = expand(has('nvim') ? '~/.config/nvim' : '~/.vim')
+
 " Vundle plugins
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+let s:plugin_path = s:editor_root . '/bundle'
+let &rtp = &rtp . ',' . s:plugin_path . '/Vundle.vim'
+call vundle#begin(s:plugin_path)
   Plugin 'VundleVim/Vundle.vim'
   Plugin 'rust-lang/rust.vim'
   Plugin 'scrooloose/syntastic'
@@ -30,7 +33,7 @@ function! MyTabLine()
     let bufname = bufname(bufnr)
     let s .= ' ' . (bufname != '' ? pathshorten(bufname) : '[Untitled]')
 
-    let is_modified = getbufvar(bufnr, "&mod")
+    let is_modified = getbufvar(bufnr, '&mod')
     let s .= (is_modified ? ' +' : '')
   endfor
   
