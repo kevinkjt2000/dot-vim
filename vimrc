@@ -12,6 +12,7 @@ call vundle#begin(s:plugin_path)
   Plugin 'lifepillar/vim-solarized8'
   Plugin 'nathanalderson/yang.vim'
   Plugin 'scrooloose/nerdtree'
+  Plugin 'davidhalter/jedi-vim'
 call vundle#end()
 
 set showtabline=2     " always show tab pages line
