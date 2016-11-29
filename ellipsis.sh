@@ -24,6 +24,10 @@ pkg.link() {
 pkg.pull() {
   git.pull
   git submodule update --recursive --remote
-  vim +PluginInstall +qall
+  if utils.cmd_exists nvim; then
+    nvim +PluginInstall +qall
+  else
+    vim +PluginInstall +qall
+  fi
 }
 
