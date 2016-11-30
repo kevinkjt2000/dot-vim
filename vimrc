@@ -13,6 +13,7 @@ call vundle#begin(s:plugin_path)
   Plugin 'nathanalderson/yang.vim'
   Plugin 'scrooloose/nerdtree'
   Plugin 'davidhalter/jedi-vim'
+  Plugin 'nfvs/vim-perforce'
 call vundle#end()
 
 set showtabline=2     " always show tab pages line
