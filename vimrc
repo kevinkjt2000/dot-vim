@@ -50,6 +50,11 @@ function! MyTabLine()
 endfunction
 set tabline=%!MyTabLine()
 
+" Disable the slowest jedi
+let g:jedi#show_call_signatures = 0
+let g:jedi#show_function_definition = 0
+let g:jedi#popup_on_dot = 0
+
 " Open NERDTree with Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
 
