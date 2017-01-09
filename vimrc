@@ -18,6 +18,7 @@ call vundle#begin(s:plugin_path)
   Plugin 'idris-hackers/idris-vim'
   Plugin 'ConradIrwin/vim-bracketed-paste'
   Plugin 'tpope/vim-projectionist'
+  Plugin 'c-brenn/phoenix.vim'
 call vundle#end()
 
 set showtabline=2     " always show tab pages line
