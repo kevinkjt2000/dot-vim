@@ -156,6 +156,10 @@ inoremap jk <esc>
 " toggle gundo
 nnoremap <leader>u :GundoToggle<CR>
 
+" Fix DEL key in nvim with the st terminal
+map <F1> <del>
+map! <F1> <del>
+
 set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set backupskip=/tmp/*,/private/tmp/*
