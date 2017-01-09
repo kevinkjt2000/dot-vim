@@ -175,3 +175,7 @@ set tm=500
 " Add a bit extra margin to the left
 set foldcolumn=1
 
+" Enable per-directory .vimrc files
+set exrc
+set secure
+
