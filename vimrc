@@ -115,7 +115,7 @@ set wrap                        " wrap lines
 set wildmenu                    " visual autocompete for command menu
 set wildignore=*.o,*~,*.pyc     " Ignore some files
 if has("win16") || has("win32")
-  set wildignore+=.git\*,.hg\*,.svn\*
+  set wildignore+=.git\*,.hg\*,.svn\*,.DS_Store\*
 else
   set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 endif
