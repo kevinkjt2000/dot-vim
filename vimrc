@@ -107,9 +107,6 @@ set smarttab
 set ai                          " auto indent
 set si                          " smart indent
 
-" don't do crazy auto commenting when I paste code
-" autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-
 set number                      " show line numbers
 set showcmd                     " show command in bottom bar
 set cursorline                  " highlight current line
