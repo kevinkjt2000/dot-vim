@@ -134,6 +134,11 @@ let mapleader=","  " <leader> is ,
 " turn off search highlight with ,<space>
 nnoremap <leader><space> :nohlsearch<CR>
 
+nnoremap <leader>oc :e %<.c<CR>
+nnoremap <leader>oC :e %<.cpp<CR>
+nnoremap <leader>oh :e %<.h<CR>
+nnoremap <leader>oH :e %<.hpp<CR>
+
 set foldenable
 set foldlevelstart=10           " open most folds by default
 set foldnestmax=10              " guards against too many folds
