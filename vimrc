@@ -113,11 +113,12 @@ set cursorline                  " highlight current line
 set wrap                        " wrap lines
 
 set wildmenu                    " visual autocompete for command menu
+set wildmode=list:longest       " make <TAB> complete only up the point of ambiguity
 set wildignore=*.o,*~,*.pyc     " Ignore some files
 if has("win16") || has("win32")
   set wildignore+=.git\*,.hg\*,.svn\*,.DS_Store\*
 else
-  set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
+  set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store/*
 endif
 
 set lazyredraw     " Don't redraw while executing macros (good performance config)
