@@ -10,11 +10,13 @@ pkg.link() {
   if utils.cmd_exists nvim; then
     mkdir -p ~/.config/nvim
     fs.link_file vimrc ~/.config/nvim/init.vim
+    fs.link_file plugins.vim ~/.config/nvim/plugins.vim
     mkdir -p ~/.config/nvim/bundle
     fs.link_file vim/bundle/Vundle.vim ~/.config/nvim/bundle/Vundle.vim
     nvim +PluginInstall +qall
   else
     fs.link_file vimrc
+    fs.link_file plugins.vim
     mkdir -p ~/.vim/bundle
     fs.link_file vim/bundle/Vundle.vim ~/.vim/bundle/Vundle.vim
     vim +PluginInstall +qall
