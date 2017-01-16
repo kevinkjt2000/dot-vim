@@ -23,6 +23,7 @@ call vundle#begin(s:plugin_path)
   Plugin 'c-brenn/phoenix.vim'
   Plugin 'tpope/vim-fugitive'
   Plugin 'dpc/vim-smarttabs'
+  Plugin 'vim-ruby/vim-ruby'
 call vundle#end()
 
 set showtabline=2     " always show tab pages line
