@@ -1,5 +1,7 @@
 let s:editor_root = expand(has('nvim') ? '~/.config/nvim' : '~/.vim')
 
+let mapleader=","  " <leader> is ,
+
 " Vundle plugins
 set nocompatible
 filetype off
@@ -20,6 +22,7 @@ call vundle#begin(s:plugin_path)
   Plugin 'tpope/vim-projectionist'
   Plugin 'c-brenn/phoenix.vim'
   Plugin 'tpope/vim-fugitive'
+  Plugin 'dpc/vim-smarttabs'
 call vundle#end()
 
 set showtabline=2     " always show tab pages line
@@ -100,12 +103,17 @@ set autoread
 
 " tab stuff
 filetype plugin indent on       " load filetype-specific indent files
-set tabstop=4
-set softtabstop=4
-set expandtab
+set shiftwidth=2
+set tabstop=2
+set softtabstop=0
+set noexpandtab
 set smarttab
-set ai                          " auto indent
-set si                          " smart indent
+set autoindent
+set smartindent
+
+" toggle hiding whitespace characters
+set listchars=tab:>-,extends:>,precedes:<
+map <leader>i :set list!<CR>
 
 set number                      " show line numbers
 set showcmd                     " show command in bottom bar
@@ -129,8 +137,6 @@ set ignorecase     " Ignore case when searching
 set smartcase      " When searching try to be smart about cases 
 set incsearch      " search as characters are entered
 set hlsearch       " highlight matches
-
-let mapleader=","  " <leader> is ,
 
 " turn off search highlight with ,<space>
 nnoremap <leader><space> :nohlsearch<CR>
