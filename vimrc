@@ -58,6 +58,10 @@ function! MyTabLine()
 endfunction
 set tabline=%!MyTabLine()
 
+if has('nvim')
+	tnoremap <Esc> <C-\><C-n>
+endif
+
 " Disable the slowest jedi
 let g:jedi#show_call_signatures = 0
 let g:jedi#show_function_definition = 0
