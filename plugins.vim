@@ -22,5 +22,6 @@ call vundle#begin(s:plugin_path)
   Plugin 'tpope/vim-fugitive'
   Plugin 'dpc/vim-smarttabs'
   Plugin 'vim-ruby/vim-ruby'
+  Plugin 'nvie/vim-flake8'
 call vundle#end()
 
