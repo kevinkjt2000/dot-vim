@@ -23,5 +23,6 @@ call vundle#begin(s:plugin_path)
   Plugin 'dpc/vim-smarttabs'
   Plugin 'vim-ruby/vim-ruby'
   Plugin 'nvie/vim-flake8'
+  Plugin 'tpope/vim-endwise'
 call vundle#end()
 
