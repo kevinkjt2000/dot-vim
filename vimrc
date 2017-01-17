@@ -1,7 +1,7 @@
 let mapleader=","  " <leader> is ,
 
-source plugins.vim
-source tabline.vim
+runtime plugins.vim
+runtime tabline.vim
 
 if has('nvim')
 	tnoremap <Esc> <C-\><C-n>
