@@ -98,6 +98,9 @@ nnoremap <leader>oC :e %<.cpp<CR>
 nnoremap <leader>oh :e %<.h<CR>
 nnoremap <leader>oH :e %<.hpp<CR>
 
+" swap between the current buffer and the last buffer
+nnoremap <leader><leader> <C-^>
+
 set foldenable
 set foldlevelstart=10           " open most folds by default
 set foldnestmax=10              " guards against too many folds
