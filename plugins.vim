@@ -12,7 +12,6 @@ call vundle#begin(s:plugin_path)
   Plugin 'lifepillar/vim-solarized8'
   Plugin 'nathanalderson/yang.vim'
   Plugin 'scrooloose/nerdtree'
-  Plugin 'davidhalter/jedi-vim'
   Plugin 'nfvs/vim-perforce'
   Plugin 'Yggdroot/LeaderF'
   Plugin 'idris-hackers/idris-vim'
@@ -24,5 +23,6 @@ call vundle#begin(s:plugin_path)
   Plugin 'vim-ruby/vim-ruby'
   Plugin 'nvie/vim-flake8'
   Plugin 'tpope/vim-endwise'
+  Plugin 'python-mode/python-mode'
 call vundle#end()
 
