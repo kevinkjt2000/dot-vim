@@ -131,6 +131,9 @@ set tm=500
 " Add a bit extra margin to the left
 set foldcolumn=1
 
+" Show lines of context near edges when scrolling up and down
+set scrolloff=3
+
 " Enable per-directory .vimrc files
 set exrc
 set secure
