@@ -2,6 +2,7 @@ let mapleader=","  " <leader> is ,
 
 runtime plugins.vim
 runtime tabline.vim
+runtime statusline.vim
 
 if has('nvim')
 	tnoremap <Esc> <C-\><C-n>
@@ -33,23 +34,11 @@ silent! colorscheme solarized8_dark
 set t_8f=[38;2;%lu;%lu;%lum
 set t_8b=[48;2;%lu;%lu;%lum
 
-set statusline=%f\     " filename
-set statusline+=%h     " help buffer
-set statusline+=%w     " preview window flag
-set statusline+=%m     " modified flag
-set statusline+=%r\    " readonly flag
-
 " SYNTASTIC!!!!!
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
-" end of default statusline (with ruler)
-set statusline+=%=%(%l,%c%V\ %=\ %P%)
 
 " it is nice to have the mouse working
 set mouse=a
