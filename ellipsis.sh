@@ -11,7 +11,7 @@ pkg.install() {
 pkg.link() {
 	mkdir -p "$VIM_ROOT/bundle"
 	ELLIPSIS_HOME="$VIM_ROOT"
-	fs.link_file vimrc "$VIM_ROOT/init.vim"
+	fs.link_rfile init.vim
 	fs.link_rfile plugins.vim
 	fs.link_rfile tabline.vim
 	fs.link_rfile statusline.vim

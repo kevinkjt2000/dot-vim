@@ -2,7 +2,6 @@ let mapleader=","  " <leader> is ,
 
 runtime plugins.vim
 runtime tabline.vim
-runtime statusline.vim
 
 if has('nvim')
 	tnoremap <Esc> <C-\><C-n>
@@ -33,6 +32,8 @@ syntax enable
 silent! colorscheme solarized8_dark
 set t_8f=[38;2;%lu;%lu;%lum
 set t_8b=[48;2;%lu;%lu;%lum
+
+let g:airline_powerline_fonts = 1
 
 " SYNTASTIC!!!!!
 let g:syntastic_always_populate_loc_list = 1
