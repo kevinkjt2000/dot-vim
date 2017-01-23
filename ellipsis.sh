@@ -14,14 +14,13 @@ pkg.link() {
 	fs.link_rfile init.vim
 	fs.link_rfile plugins.vim
 	fs.link_rfile tabline.vim
-	fs.link_rfile statusline.vim
 	fs.link_file vim/bundle/Vundle.vim "$VIM_ROOT/bundle/Vundle.vim"
 	nvim +PluginInstall +qall
 }
 
 pkg.links() {
 	msg.bold "${1:-$PKG_NAME}"
-	local files="init.vim plugins.vim tabline.vim statusline.vim bundle/Vundle.vim"
+	local files="init.vim plugins.vim tabline.vim bundle/Vundle.vim"
 	for file in $files; do
 		local file="$VIM_ROOT/$file"
 		local link="$(readlink "$file")"
