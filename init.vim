@@ -138,3 +138,5 @@ set scrolloff=3
 set exrc
 set secure
 
+" Allow switching buffers without writing to disk
+set hidden
