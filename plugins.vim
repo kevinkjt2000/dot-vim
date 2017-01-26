@@ -13,7 +13,7 @@ call vundle#begin(s:plugin_path)
 	Plugin 'nathanalderson/yang.vim'
 	Plugin 'scrooloose/nerdtree'
 	Plugin 'nfvs/vim-perforce'
-	Plugin 'Yggdroot/LeaderF'
+	Plugin 'kevinkjt2000/LeaderF'
 	Plugin 'idris-hackers/idris-vim'
 	Plugin 'ConradIrwin/vim-bracketed-paste'
 	Plugin 'tpope/vim-projectionist'
