@@ -28,5 +28,6 @@ call vundle#begin(s:plugin_path)
 	Plugin 'vim-airline/vim-airline-themes'
 	Plugin 'edkolev/tmuxline.vim'
 	Plugin 'tpope/vim-unimpaired'
+	Plugin 'derekelkins/agda-vim'
 call vundle#end()
 
