@@ -11,6 +11,7 @@ autocmd FileType python map <buffer> <F7> :call Flake8()<CR>
 
 " Open NERDTree with Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeIgnore=['\.pyc$', '\~$']  " Ignore some files in NERDTree
 
 " Ignoring this silly -Z deprecration that the rustc team has been wishy washy
 " on for months now...
