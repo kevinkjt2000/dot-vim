@@ -16,9 +16,7 @@ map <C-n> :NERDTreeToggle<CR>
 " on for months now...
 let g:syntastic_quiet_messages = {"regex": 'is unstable and should only be used on the nightly compiler, but it is currently accepted for backwards compatibility; this will soon change, see issue #31847 for more details'}
 
-" rust-lang/rust.vim is having some serious trouble giving things that they
-" promise in their README, so I have to do their work for them...
-autocmd FileType rust let g:syntastic_rust_checkers = ['rustc']
+let g:syntastic_rust_checkers = ['cargo']
 
 " automatically reload vimrc when it is saved
 augroup reload_vimrc " {
