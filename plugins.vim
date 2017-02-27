@@ -17,7 +17,6 @@ call vundle#begin(s:plugin_path)
 	Plugin 'idris-hackers/idris-vim'
 	Plugin 'ConradIrwin/vim-bracketed-paste'
 	Plugin 'tpope/vim-projectionist'
-	Plugin 'c-brenn/phoenix.vim'
 	Plugin 'tpope/vim-fugitive'
 	Plugin 'dpc/vim-smarttabs'
 	Plugin 'vim-ruby/vim-ruby'
