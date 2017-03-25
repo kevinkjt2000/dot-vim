@@ -97,6 +97,10 @@ nnoremap <leader><leader> <C-^>
 
 " change CtrlP to open with <leader>f instead
 let g:ctrlp_map = '<leader>f'
+if executable('rg')
+	set grepprg=rg\ --no-heading
+	let g:ctrlp_user_command = 'rg %s -g "" --files'
+endif
 
 set foldenable
 set foldlevelstart=10           " open most folds by default
