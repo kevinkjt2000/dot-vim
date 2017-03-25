@@ -28,5 +28,6 @@ call vundle#begin(s:plugin_path)
 	Plugin 'tpope/vim-unimpaired'
 	Plugin 'derekelkins/agda-vim'
 	Plugin 'ctrlpvim/ctrlp.vim'
+	Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 
