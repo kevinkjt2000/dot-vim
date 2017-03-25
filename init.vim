@@ -95,6 +95,9 @@ nnoremap <leader>oH :e %<.hpp<CR>
 " swap between the current buffer and the last buffer
 nnoremap <leader><leader> <C-^>
 
+" change CtrlP to open with <leader>f instead
+let g:ctrlp_map = '<leader>f'
+
 set foldenable
 set foldlevelstart=10           " open most folds by default
 set foldnestmax=10              " guards against too many folds

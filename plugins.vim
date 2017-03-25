@@ -13,7 +13,6 @@ call vundle#begin(s:plugin_path)
 	Plugin 'nathanalderson/yang.vim'
 	Plugin 'scrooloose/nerdtree'
 	Plugin 'nfvs/vim-perforce'
-	Plugin 'kevinkjt2000/LeaderF'
 	Plugin 'idris-hackers/idris-vim'
 	Plugin 'ConradIrwin/vim-bracketed-paste'
 	Plugin 'tpope/vim-projectionist'
@@ -28,5 +27,6 @@ call vundle#begin(s:plugin_path)
 	Plugin 'edkolev/tmuxline.vim'
 	Plugin 'tpope/vim-unimpaired'
 	Plugin 'derekelkins/agda-vim'
+	Plugin 'ctrlpvim/ctrlp.vim'
 call vundle#end()
 
