@@ -4,8 +4,21 @@ runtime plugins.vim
 runtime tabline.vim
 
 if has('nvim')
+	" terminal mode escape mapping is more sane
 	tnoremap <Esc> <C-\><C-n>
 endif
+
+" Match ctags in a case sensitive manner when using C-]
+fun! MatchCaseTag()
+	let ic = &ic
+	set noignorecase
+	try
+		exe 'tjump ' . expand('<cword>')
+	finally
+		let &ic = ic
+	endtry
+endfun
+nnoremap <silent><C-]> :call MatchCaseTag()<CR>
 
 autocmd FileType python map <buffer> <F7> :call Flake8()<CR>
 
