@@ -47,6 +47,7 @@ set t_8b=[48;2;%lu;%lu;%lum
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme='solarized'
+let g:airline#extensions#tmuxline#enabled = 0
 
 " SYNTASTIC!!!!!
 let g:syntastic_always_populate_loc_list = 1
