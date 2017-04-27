@@ -31,6 +31,6 @@ pkg.links() {
 pkg.pull() {
 	git.pull
 	git submodule update --recursive --remote
-	nvim +PluginClean! +PluginInstall +qall
+	nvim +PluginClean! +PluginInstall +PluginUpdate +qall
 }
 
