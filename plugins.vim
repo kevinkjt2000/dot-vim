@@ -24,7 +24,7 @@ call vundle#begin(s:plugin_path)
 	Plugin 'python-mode/python-mode'
 	Plugin 'vim-airline/vim-airline'
 	Plugin 'vim-airline/vim-airline-themes'
-	Plugin 'edkolev/tmuxline.vim'
+	Plugin 'kevinkjt2000/tmuxline.vim'
 	Plugin 'tpope/vim-unimpaired'
 	Plugin 'derekelkins/agda-vim'
 	Plugin 'ctrlpvim/ctrlp.vim'
