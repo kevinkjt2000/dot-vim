@@ -34,8 +34,8 @@ let g:syntastic_rust_checkers = ['cargo']
 
 " automatically reload vimrc when it is saved
 augroup reload_vimrc " {
-  autocmd!
-  autocmd BufWritePost $MYVIMRC source $MYVIMRC
+	autocmd!
+	autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END " }
 
 " cool colors (requires a 24-bit terminal)
@@ -84,9 +84,9 @@ set wildmenu                    " visual autocompete for command menu
 set wildmode=list:longest       " make <TAB> complete only up the point of ambiguity
 set wildignore=*.o,*~,*.pyc     " Ignore some files
 if has("win16") || has("win32")
-  set wildignore+=.git\*,.hg\*,.svn\*,.DS_Store\*
+	set wildignore+=.git\*,.hg\*,.svn\*,.DS_Store\*
 else
-  set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store/*
+	set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store/*
 endif
 
 set lazyredraw     " Don't redraw while executing macros (good performance config)
@@ -94,12 +94,15 @@ set lazyredraw     " Don't redraw while executing macros (good performance confi
 set showmatch      " highlight matching [{()}]
 
 set ignorecase     " Ignore case when searching
-set smartcase      " When searching try to be smart about cases 
+set smartcase      " When searching try to be smart about cases
 set incsearch      " search as characters are entered
 set hlsearch       " highlight matches
 
 " turn off search highlight with ,<space>
 nnoremap <leader><space> :nohlsearch<CR>
+
+" goto defintion of symbol in languages supported by YouCompleteMe
+nnoremap <Leader>] :YcmCompleter GoTo<CR>
 
 nnoremap <leader>oc :e %<.c<CR>
 nnoremap <leader>oC :e %<.cpp<CR>
