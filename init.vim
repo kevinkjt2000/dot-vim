@@ -32,6 +32,9 @@ let g:syntastic_quiet_messages = {"regex": 'is unstable and should only be used 
 
 let g:syntastic_rust_checkers = ['cargo']
 
+" Allow YCM to play nicely with GCC Syntastic checkers
+let g:ycm_show_diagnostics_ui = 0
+
 " automatically reload vimrc when it is saved
 augroup reload_vimrc " {
 	autocmd!
