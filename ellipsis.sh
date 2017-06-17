@@ -15,7 +15,7 @@ pkg.link() {
 	fs.link_rfile plugins.vim
 	fs.link_rfile tabline.vim
 	fs.link_file vim/bundle/Vundle.vim "$VIM_ROOT/bundle/Vundle.vim"
-	nvim +PluginClean! +PluginInstall +qall
+	nvim +PluginClean! +PluginInstall +GoInstallBinaries +qall
 }
 
 pkg.links() {
@@ -31,6 +31,6 @@ pkg.links() {
 pkg.pull() {
 	git.pull
 	git submodule update --recursive --remote
-	nvim +PluginClean! +PluginInstall +PluginUpdate +qall
+	nvim +PluginClean! +PluginInstall +PluginUpdate +GoInstallBinaries +qall
 }
 

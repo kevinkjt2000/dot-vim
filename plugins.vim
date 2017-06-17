@@ -29,5 +29,7 @@ call vundle#begin(s:plugin_path)
 	Plugin 'derekelkins/agda-vim'
 	Plugin 'ctrlpvim/ctrlp.vim'
 	Plugin 'Valloric/YouCompleteMe'
+	Plugin 'fatih/vim-go'
+	Plugin 'nsf/gocode', {'rtp': 'nvim/'}
 call vundle#end()
 
