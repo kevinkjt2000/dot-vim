@@ -21,6 +21,7 @@ call vundle#begin(s:plugin_path)
 	Plugin 'vim-ruby/vim-ruby'
 	Plugin 'nvie/vim-flake8'
 	Plugin 'tpope/vim-endwise'
+	Plugin 'tpope/vim-surround'
 	Plugin 'python-mode/python-mode'
 	Plugin 'vim-airline/vim-airline'
 	Plugin 'vim-airline/vim-airline-themes'
