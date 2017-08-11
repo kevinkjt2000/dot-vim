@@ -8,7 +8,6 @@ let &rtp = &rtp . ',' . s:plugin_path . '/Vundle.vim'
 call vundle#begin(s:plugin_path)
 	Plugin 'VundleVim/Vundle.vim'
 	Plugin 'rust-lang/rust.vim'
-	Plugin 'scrooloose/syntastic'
 	Plugin 'lifepillar/vim-solarized8'
 	Plugin 'nathanalderson/yang.vim'
 	Plugin 'scrooloose/nerdtree'
@@ -32,5 +31,6 @@ call vundle#begin(s:plugin_path)
 	Plugin 'Valloric/YouCompleteMe'
 	Plugin 'fatih/vim-go'
 	Plugin 'nsf/gocode', {'rtp': 'nvim/'}
+	Plugin 'w0rp/ale'
 call vundle#end()
 

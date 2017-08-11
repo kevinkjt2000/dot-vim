@@ -26,15 +26,6 @@ autocmd FileType python map <buffer> <F7> :call Flake8()<CR>
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeIgnore=['\.pyc$', '\~$']  " Ignore some files in NERDTree
 
-" Ignoring this silly -Z deprecration that the rustc team has been wishy washy
-" on for months now...
-let g:syntastic_quiet_messages = {"regex": 'is unstable and should only be used on the nightly compiler, but it is currently accepted for backwards compatibility; this will soon change, see issue #31847 for more details'}
-
-let g:syntastic_rust_checkers = ['cargo']
-
-" Allow YCM to play nicely with GCC Syntastic checkers
-let g:ycm_show_diagnostics_ui = 0
-
 " automatically reload vimrc when it is saved
 augroup reload_vimrc " {
 	autocmd!
@@ -51,12 +42,6 @@ set t_8b=[48;2;%lu;%lu;%lum
 let g:airline_powerline_fonts = 1
 let g:airline_theme='solarized'
 let g:airline#extensions#tmuxline#enabled = 0
-
-" SYNTASTIC!!!!!
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 
 " it is nice to have the mouse working
 set mouse=a
