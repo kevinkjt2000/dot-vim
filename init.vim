@@ -42,6 +42,7 @@ set t_8b=[48;2;%lu;%lu;%lum
 let g:airline_powerline_fonts = 1
 let g:airline_theme='solarized'
 let g:airline#extensions#tmuxline#enabled = 0
+let g:airline#extensions#ale#enabled = 1
 
 " it is nice to have the mouse working
 set mouse=a
