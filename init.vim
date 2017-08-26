@@ -1,7 +1,6 @@
 let mapleader=","  " <leader> is ,
 
 runtime plugins.vim
-runtime tabline.vim
 
 if has('nvim')
 	" terminal mode escape mapping is more sane
