@@ -43,6 +43,13 @@ let g:airline_theme='solarized'
 let g:airline#extensions#tmuxline#enabled = 0
 let g:airline#extensions#ale#enabled = 1
 
+" some ALE options
+let g:ale_linters = {
+\   'cpp': ['clang', 'clangtidy', 'cppcheck', 'cpplint', 'g++'],
+\}
+let g:ale_lint_on_text_changed = 'normal'
+let g:ale_lint_on_insert_leave = 1
+
 " it is nice to have the mouse working
 set mouse=a
 
