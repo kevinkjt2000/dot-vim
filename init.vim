@@ -93,16 +93,17 @@ set smartcase      " When searching try to be smart about cases
 set incsearch      " search as characters are entered
 set hlsearch       " highlight matches
 
-" turn off search highlight with ,<space>
+" turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR>
 
 " goto defintion of symbol in languages supported by YouCompleteMe
 nnoremap <Leader>] :YcmCompleter GoTo<CR>
 
-nnoremap <leader>oc :e %<.c<CR>
-nnoremap <leader>oC :e %<.cpp<CR>
-nnoremap <leader>oh :e %<.h<CR>
-nnoremap <leader>oH :e %<.hpp<CR>
+" switch to alternate file using tpope/vim-projectionist
+nnoremap <leader>a :A<CR>
+
+" save file with leader w
+nnoremap <leader>w :w<CR>
 
 " swap between the current buffer and the last buffer
 nnoremap <leader><leader> <C-^>
