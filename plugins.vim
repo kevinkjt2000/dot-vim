@@ -6,6 +6,7 @@ let s:plugin_path = s:editor_root . '/bundle'
 let &rtp = &rtp . ',' . s:plugin_path . '/Vundle.vim'
 
 call vundle#begin(s:plugin_path)
+	Plugin 'burnettk/vim-angular'
 	Plugin 'ConradIrwin/vim-bracketed-paste'
 	Plugin 'ctrlpvim/ctrlp.vim'
 	Plugin 'derekelkins/agda-vim'
@@ -15,6 +16,7 @@ call vundle#begin(s:plugin_path)
 	Plugin 'kevinkjt2000/tmuxline.vim'
 	Plugin 'leafgarland/typescript-vim'
 	Plugin 'lifepillar/vim-solarized8'
+	Plugin 'moll/vim-node'
 	Plugin 'nathanalderson/yang.vim'
 	Plugin 'nfvs/vim-perforce'
 	Plugin 'nsf/gocode', {'rtp': 'nvim/'}
