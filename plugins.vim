@@ -13,6 +13,7 @@ call vundle#begin(s:plugin_path)
 	Plugin 'fatih/vim-go'
 	Plugin 'idris-hackers/idris-vim'
 	Plugin 'kevinkjt2000/tmuxline.vim'
+	Plugin 'leafgarland/typescript-vim'
 	Plugin 'lifepillar/vim-solarized8'
 	Plugin 'nathanalderson/yang.vim'
 	Plugin 'nfvs/vim-perforce'
