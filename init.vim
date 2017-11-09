@@ -110,6 +110,8 @@ nnoremap <leader><leader> <C-^>
 
 " change CtrlP to open with <leader>f instead
 let g:ctrlp_map = '<leader>f'
+" open CtrlP in buffer mode with <leader>b
+nnoremap <leader>b :CtrlPBuffer<CR>
 if executable('rg')
 	set grepprg=rg\ --no-heading
 	let g:ctrlp_user_command = 'rg %s -g "" --files'
