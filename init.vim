@@ -93,6 +93,8 @@ set smartcase      " When searching try to be smart about cases
 set incsearch      " search as characters are entered
 set hlsearch       " highlight matches
 
+set nofixendofline " Don't automatically add a new line to the end of files
+
 " turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR>
 
