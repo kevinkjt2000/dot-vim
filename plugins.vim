@@ -11,6 +11,7 @@ call vundle#begin(s:plugin_path)
 	Plugin 'ctrlpvim/ctrlp.vim'
 	Plugin 'derekelkins/agda-vim'
 	Plugin 'dpc/vim-smarttabs'
+	Plugin 'editorconfig/editorconfig-vim'
 	Plugin 'fatih/vim-go'
 	Plugin 'idris-hackers/idris-vim'
 	Plugin 'kevinkjt2000/tmuxline.vim'
