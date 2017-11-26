@@ -20,6 +20,7 @@ endfun
 nnoremap <silent><C-]> :call MatchCaseTag()<CR>
 
 autocmd FileType python map <buffer> <F7> :call Flake8()<CR>
+let g:pymode_rope = 1
 
 " Open NERDTree with Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
