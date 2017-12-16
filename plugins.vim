@@ -13,6 +13,7 @@ call vundle#begin(s:plugin_path)
 	Plugin 'dpc/vim-smarttabs'
 	Plugin 'editorconfig/editorconfig-vim'
 	Plugin 'fatih/vim-go'
+	Plugin 'huawenyu/neogdb.vim'
 	Plugin 'idris-hackers/idris-vim'
 	Plugin 'kevinkjt2000/tmuxline.vim'
 	Plugin 'leafgarland/typescript-vim'
