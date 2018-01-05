@@ -1,46 +1,30 @@
-let mapleader=","  " <leader> is ,
+runtime plugins.vim   " Load plugins first :)
 
-runtime plugins.vim
 runtime airline.vim
+runtime mappings.vim
 
 if has('nvim')
-	" terminal mode escape mapping is more sane
+	" Make terminal mode escape actually be <Esc>
 	tnoremap <Esc> <C-\><C-n>
 endif
 
-" Match ctags in a case sensitive manner when using C-]
-fun! MatchCaseTag()
-	let ic = &ic
-	set noignorecase
-	try
-		exe 'tjump ' . expand('<cword>')
-	finally
-		let &ic = ic
-	endtry
-endfun
-nnoremap <silent><C-]> :call MatchCaseTag()<CR>
-
-autocmd FileType python map <buffer> <F7> :call Flake8()<CR>
+" Enable .ropeproject creation with python-mode plugin
 let g:pymode_rope = 1
 
-" Some helpful shortcuts for C++ GDB
-autocmd FileType cpp map <buffer> <leader>d :GdbLocal confloc#me a.out ""<CR>
-autocmd FileType cpp map <buffer> <leader>b :GdbToggleBreak<CR><CR>
-
-" automatically reload vimrc when it is saved
+" Automatically reload vimrc when it is saved
 augroup reload_vimrc " {
 	autocmd!
 	autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END " }
 
-" cool colors (requires a 24-bit terminal)
+" Cool colors!! (requires a 24-bit terminal)
 set termguicolors
 syntax enable
 silent! colorscheme solarized8_dark
 set t_8f=[38;2;%lu;%lu;%lum
 set t_8b=[48;2;%lu;%lu;%lum
 
-" some ALE options
+" ALE options
 let g:ale_linters = {
 \   'cpp': ['clang', 'clangtidy', 'cppcheck', 'cpplint', 'g++'],
 \   'typescript': ['tslint'],
@@ -48,13 +32,13 @@ let g:ale_linters = {
 let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
 
-" it is nice to have the mouse working
+" It is nice to have the mouse working
 set mouse=a
 
 " Set to auto read when a file is changed from the outside
 set autoread
 
-" tab stuff
+" Default indentation settings that are overriden by .editorconfig files
 filetype plugin indent on       " load filetype-specific indent files
 set shiftwidth=2
 set tabstop=2
@@ -64,17 +48,16 @@ set smarttab
 set autoindent
 set smartindent
 
-" toggle hiding whitespace characters
+" Configure invisible character alternates
 set listchars=tab:>-,extends:>,precedes:<
-map <leader>i :set list!<CR>
 
-set number                      " show line numbers
-set showcmd                     " show command in bottom bar
-set cursorline                  " highlight current line
-set wrap                        " wrap lines
+set number                      " Show line numbers
+set showcmd                     " Show command in bottom bar
+set cursorline                  " Highlight current line
+set wrap                        " Wrap lines
 
-set wildmenu                    " visual autocompete for command menu
-set wildmode=list:longest       " make <TAB> complete only up the point of ambiguity
+set wildmenu                    " Visual autocompete for command menu
+set wildmode=list:longest       " Make <TAB> complete only up the point of ambiguity
 set wildignore=*.o,*~,*.pyc     " Ignore some files
 if has("win16") || has("win32")
 	set wildignore+=.git\*,.hg\*,.svn\*,.DS_Store\*
@@ -84,58 +67,24 @@ endif
 
 set lazyredraw     " Don't redraw while executing macros (good performance config)
 
-set showmatch      " highlight matching [{()}]
+set showmatch      " Highlight matching [{()}]
 
 set ignorecase     " Ignore case when searching
 set smartcase      " When searching try to be smart about cases
-set incsearch      " search as characters are entered
-set hlsearch       " highlight matches
+set incsearch      " Search as characters are entered
+set hlsearch       " Highlight matches
 
 set nofixendofline " Don't automatically add a new line to the end of files
 
-" turn off search highlight
-nnoremap <leader><space> :nohlsearch<CR>
-
-" goto defintion of symbol in languages supported by YouCompleteMe
-nnoremap <Leader>] :YcmCompleter GoTo<CR>
-
-" switch to alternate file using tpope/vim-projectionist
-nnoremap <leader>a :A<CR>
-
-" save file with leader w
-nnoremap <leader>w :w<CR>
-
-" swap between the current buffer and the last buffer
-nnoremap <leader><leader> <C-^>
-
-" change CtrlP to open with <leader>f instead
-let g:ctrlp_map = '<leader>f'
-" open CtrlP in buffer mode with <leader>b
-nnoremap <leader>b :CtrlPBuffer<CR>
 if executable('rg')
 	set grepprg=rg\ --no-heading
 	let g:ctrlp_user_command = 'rg %s -g "" --files'
 endif
 
 set foldenable
-set foldlevelstart=10           " open most folds by default
-set foldnestmax=10              " guards against too many folds
-nnoremap <space> za             " space open/closes folds
-set foldmethod=indent           " fold based on indent level
-
-" Configure backspace so it acts as it should act
-set backspace=eol,start,indent
-set whichwrap+=<,>,h,l
-
-" move vertically by visual line
-nnoremap j gj
-nnoremap k gk
-
-" jk is escape
-inoremap jk <esc>
-
-" toggle gundo
-nnoremap <leader>u :GundoToggle<CR>
+set foldlevelstart=10           " Open most folds by default
+set foldnestmax=10              " Guards against too many folds
+set foldmethod=indent           " Fold based on indent level
 
 set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
