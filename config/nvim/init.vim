@@ -27,10 +27,6 @@ let g:pymode_rope = 1
 autocmd FileType cpp map <buffer> <leader>d :GdbLocal confloc#me a.out ""<CR>
 autocmd FileType cpp map <buffer> <leader>b :GdbToggleBreak<CR><CR>
 
-" Open NERDTree with Ctrl+n
-map <C-n> :NERDTreeToggle<CR>
-let NERDTreeIgnore=['\.pyc$', '\~$']  " Ignore some files in NERDTree
-
 " automatically reload vimrc when it is saved
 augroup reload_vimrc " {
 	autocmd!

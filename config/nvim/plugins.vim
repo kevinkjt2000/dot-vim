@@ -25,7 +25,6 @@ call vundle#begin(s:plugin_path)
 	Plugin 'nvie/vim-flake8'
 	Plugin 'python-mode/python-mode'
 	Plugin 'rust-lang/rust.vim'
-	Plugin 'scrooloose/nerdtree'
 	Plugin 'tpope/vim-abolish'
 	Plugin 'tpope/vim-bundler'
 	Plugin 'tpope/vim-dispatch'
