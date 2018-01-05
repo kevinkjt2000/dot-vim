@@ -1,6 +1,7 @@
 let mapleader=","  " <leader> is ,
 
 runtime plugins.vim
+runtime airline.vim
 
 if has('nvim')
 	" terminal mode escape mapping is more sane
@@ -42,24 +43,6 @@ syntax enable
 silent! colorscheme solarized8_dark
 set t_8f=[38;2;%lu;%lu;%lum
 set t_8b=[48;2;%lu;%lu;%lum
-
-let g:airline_powerline_fonts = 1
-let g:airline_theme='solarized'
-let g:airline#extensions#tmuxline#enabled = 0
-let g:airline#extensions#ale#enabled = 1
-let g:airline_mode_map = {
-			\ '__' : '-',
-			\ 'n'  : 'N',
-			\ 'i'  : 'I',
-			\ 'R'  : 'R',
-			\ 'c'  : 'C',
-			\ 'v'  : 'V',
-			\ 'V'  : 'V',
-			\ '' : 'V',
-			\ 's'  : 'S',
-			\ 'S'  : 'S',
-			\ '' : 'S',
-			\ }
 
 " some ALE options
 let g:ale_linters = {
