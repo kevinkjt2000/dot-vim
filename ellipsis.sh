@@ -10,9 +10,7 @@ pkg.install() {
 
 pkg.link() {
 	mkdir -p "$VIM_ROOT/bundle"
-	ELLIPSIS_HOME="$VIM_ROOT"
-	fs.link_rfile init.vim
-	fs.link_rfile plugins.vim
+	fs.link_rfiles config/nvim "$VIM_ROOT"
 	fs.link_file vim/bundle/Vundle.vim "$VIM_ROOT/bundle/Vundle.vim"
 	nvim +PluginClean! +PluginInstall +GoInstallBinaries +qall
 	update_ycm
@@ -24,7 +22,7 @@ pkg.links() {
 	for file in $files; do
 		local file="$VIM_ROOT/$file"
 		local link="$(readlink "$file")"
-		echo "$(path.relative_to_packages "$link") -> $(path.relative_to_home "$file")";
+		echo "$(path.relative_to_packages "$link") -> $(path.relative_to_home "$file")"
 	done
 }
 
