@@ -27,10 +27,14 @@ set t_8b=[48;2;%lu;%lu;%lum
 " ALE options
 let g:ale_linters = {
 \   'cpp': ['clang', 'clangtidy', 'cppcheck', 'cpplint', 'g++'],
+\   'haskell': ['ghc'],
 \   'typescript': ['tslint'],
 \}
 let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
+
+" Newer versions of GHC require linking dynamically now on Arch
+let g:ale_haskell_ghc_options = '-dynamic'
 
 " It is nice to have the mouse working
 set mouse=a
