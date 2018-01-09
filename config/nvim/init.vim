@@ -26,7 +26,7 @@ set t_8b=[48;2;%lu;%lu;%lum
 
 " ALE options
 let g:ale_linters = {
-\   'cpp': ['clang', 'clangtidy', 'cppcheck', 'cpplint', 'g++'],
+\   'cpp': ['clang', 'clangtidy', 'g++'],
 \   'haskell': ['ghc'],
 \   'typescript': ['tslint'],
 \}
