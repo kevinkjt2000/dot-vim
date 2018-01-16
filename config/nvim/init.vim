@@ -11,6 +11,9 @@ endif
 " Enable .ropeproject creation with python-mode plugin
 let g:pymode_rope = 1
 
+" Disable pymode linting, since ALE handles that
+let g:pymode_lint = 0
+
 " Automatically reload vimrc when it is saved
 augroup reload_vimrc " {
 	autocmd!
@@ -28,6 +31,7 @@ set t_8b=[48;2;%lu;%lu;%lum
 let g:ale_linters = {
 \   'cpp': ['clang', 'clangtidy', 'g++'],
 \   'haskell': ['ghc'],
+\   'python': ['flake8', 'pylint'],
 \   'typescript': ['tslint'],
 \}
 let g:ale_lint_on_text_changed = 'normal'
