@@ -21,6 +21,7 @@ call vundle#begin(s:plugin_path)
 	Plugin 'lifepillar/vim-solarized8'
 	Plugin 'moll/vim-node'
 	Plugin 'nathanalderson/yang.vim'
+	Plugin 'neovimhaskell/haskell-vim'
 	Plugin 'nfvs/vim-perforce'
 	Plugin 'nsf/gocode', {'rtp': 'nvim/'}
 	Plugin 'nvie/vim-flake8'
