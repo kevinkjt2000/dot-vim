@@ -34,6 +34,7 @@ call vundle#begin(s:plugin_path)
 	Plugin 'tpope/vim-fugitive'
 	Plugin 'tpope/vim-projectionist'
 	Plugin 'tpope/vim-rake'
+	Plugin 'tpope/vim-repeat'
 	Plugin 'tpope/vim-surround'
 	Plugin 'tpope/vim-unimpaired'
 	Plugin 'Valloric/YouCompleteMe'
