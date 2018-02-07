@@ -14,6 +14,7 @@ call vundle#begin(s:plugin_path)
 	Plugin 'fatih/vim-go'
 	Plugin 'huawenyu/neogdb.vim'
 	Plugin 'idris-hackers/idris-vim'
+	Plugin 'jakwings/vim-pony'
 	Plugin 'junegunn/vader.vim'
 	Plugin 'kevinkjt2000/agda-vim'
 	Plugin 'kevinkjt2000/tmuxline.vim'
