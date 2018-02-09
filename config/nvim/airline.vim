@@ -15,3 +15,4 @@ let g:airline_mode_map = {
 			\ 'S'  : 'S',
 			\ '' : 'S',
 			\ }
+let g:airline_section_z = '%#__accent_bold#%4l%#__restore__#%#__accent_bold#/%L%{g:airline_symbols.maxlinenr}%#__restore__#'
