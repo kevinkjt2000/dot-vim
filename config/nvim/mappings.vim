@@ -58,3 +58,14 @@ nnoremap <leader>u :GundoToggle<CR>
 
 " jk is escape
 inoremap jk <esc>
+
+if has('nvim')
+	" Make terminal mode escape actually be <Esc>
+	tnoremap <Esc> <C-\><C-n>
+endif
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)

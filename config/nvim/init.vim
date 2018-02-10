@@ -3,11 +3,6 @@ runtime plugins.vim   " Load plugins first :)
 runtime airline.vim
 runtime mappings.vim
 
-if has('nvim')
-	" Make terminal mode escape actually be <Esc>
-	tnoremap <Esc> <C-\><C-n>
-endif
-
 " Enable .ropeproject creation with python-mode plugin
 let g:pymode_rope = 1
 

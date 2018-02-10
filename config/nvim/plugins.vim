@@ -16,6 +16,7 @@ call vundle#begin(s:plugin_path)
 	Plugin 'idris-hackers/idris-vim'
 	Plugin 'jakwings/vim-pony'
 	Plugin 'junegunn/vader.vim'
+	Plugin 'junegunn/vim-easy-align'
 	Plugin 'kevinkjt2000/agda-vim'
 	Plugin 'kevinkjt2000/tmuxline.vim'
 	Plugin 'leafgarland/typescript-vim'
