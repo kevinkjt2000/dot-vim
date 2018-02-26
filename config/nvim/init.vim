@@ -10,10 +10,16 @@ let g:pymode_rope = 1
 let g:pymode_lint = 0
 
 " Automatically reload vimrc when it is saved
-augroup reload_vimrc " {
+augroup reload_vimrc
 	autocmd!
 	autocmd BufWritePost $MYVIMRC source $MYVIMRC
-augroup END " }
+augroup END
+
+" Automatically turn off line numbers in terminal mode
+augroup no_terminal_line_numbers
+	autocmd!
+	autocmd TermOpen * setlocal nonumber norelativenumber
+augroup END
 
 " Cool colors!! (requires a 24-bit terminal)
 set termguicolors
