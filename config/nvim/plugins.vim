@@ -15,6 +15,7 @@ call vundle#begin(s:plugin_path)
 	Plugin 'huawenyu/neogdb.vim'
 	Plugin 'idris-hackers/idris-vim'
 	Plugin 'jakwings/vim-pony'
+	Plugin 'jremmen/vim-ripgrep'
 	Plugin 'junegunn/vader.vim'
 	Plugin 'junegunn/vim-easy-align'
 	Plugin 'kevinkjt2000/agda-vim'
