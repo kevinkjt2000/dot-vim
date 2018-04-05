@@ -19,6 +19,7 @@ call vundle#begin(s:plugin_path)
 	Plugin 'junegunn/vader.vim'
 	Plugin 'junegunn/vim-easy-align'
 	Plugin 'kevinkjt2000/agda-vim'
+	Plugin 'kevinkjt2000/robotframework-vim'
 	Plugin 'kevinkjt2000/tmuxline.vim'
 	Plugin 'leafgarland/typescript-vim'
 	Plugin 'lifepillar/vim-solarized8'
