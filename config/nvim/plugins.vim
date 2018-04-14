@@ -7,6 +7,7 @@ let &rtp = &rtp . ',' . s:plugin_path . '/Vundle.vim'
 
 call vundle#begin(s:plugin_path)
 	Plugin 'burnettk/vim-angular'
+	Plugin 'cespare/vim-toml'
 	Plugin 'ConradIrwin/vim-bracketed-paste'
 	Plugin 'ctrlpvim/ctrlp.vim'
 	Plugin 'dpc/vim-smarttabs'
