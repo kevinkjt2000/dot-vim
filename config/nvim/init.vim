@@ -3,6 +3,12 @@ runtime plugins.vim   " Load plugins first :)
 runtime airline.vim
 runtime mappings.vim
 
+" Disable prettier default autoformat
+let g:prettier#autoformat = 0
+" Automatically format some web filetypes with prettier
+" TODO: investigate using async version
+autocmd BufWritePre *.js,*.ts,*.css,*.scss Prettier
+
 " Enable .ropeproject creation with python-mode plugin
 let g:pymode_rope = 1
 

@@ -30,6 +30,7 @@ call vundle#begin(s:plugin_path)
 	Plugin 'nfvs/vim-perforce'
 	Plugin 'nsf/gocode', {'rtp': 'nvim/'}
 	Plugin 'nvie/vim-flake8'
+	Plugin 'prettier/vim-prettier'
 	Plugin 'python-mode/python-mode'
 	Plugin 'rust-lang/rust.vim'
 	Plugin 'tpope/vim-abolish'
