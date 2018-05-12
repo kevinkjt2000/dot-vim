@@ -47,6 +47,19 @@ let g:ale_lint_on_insert_leave = 1
 " Newer versions of GHC require linking dynamically now on Arch
 let g:ale_haskell_ghc_options = '-dynamic'
 
+" Fix https://github.com/phoenixframework/phoenix/issues/1165
+augroup AleGroup
+	autocmd!
+	autocmd User ALELint call TouchOpenFile()
+augroup END
+
+func! TouchOpenFile()
+	let g:ale_enabled = 0
+	sleep 500m
+	w
+	let g:ale_enabled = 1
+endfunc
+
 " It is nice to have the mouse working
 set mouse=a
 
