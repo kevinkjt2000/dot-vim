@@ -26,6 +26,7 @@ call vundle#begin(s:plugin_path)
 	Plugin 'kevinkjt2000/tmuxline.vim'
 	Plugin 'leafgarland/typescript-vim'
 	Plugin 'lifepillar/vim-solarized8'
+	Plugin 'mhinz/vim-mix-format'
 	Plugin 'moll/vim-node'
 	Plugin 'nathanalderson/yang.vim'
 	Plugin 'neovimhaskell/haskell-vim'

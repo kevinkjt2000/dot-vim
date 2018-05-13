@@ -66,6 +66,10 @@ let g:closetag_filenames = '*.html,*.eex,*.erb'
 " Close any <tag> with </tag> in these files (even tags like <br>)
 let g:closetag_xhtml_filenames = '*.xml,*.xhtml,*.jsx'
 
+" Automatically format elixir files
+let g:mix_format_on_save = 1
+let g:mix_format_options = '--check-equivalent'
+
 " It is nice to have the mouse working
 set mouse=a
 
