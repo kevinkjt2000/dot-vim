@@ -6,6 +6,7 @@ let s:plugin_path = s:editor_root . '/bundle'
 let &rtp = &rtp . ',' . s:plugin_path . '/Vundle.vim'
 
 call vundle#begin(s:plugin_path)
+	Plugin 'alvan/vim-closetag'
 	Plugin 'burnettk/vim-angular'
 	Plugin 'cespare/vim-toml'
 	Plugin 'ConradIrwin/vim-bracketed-paste'

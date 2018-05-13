@@ -60,6 +60,12 @@ func! TouchOpenFile()
 	let g:ale_enabled = 1
 endfunc
 
+" Configure vim-closetag to also work for languages like ruby and elixir
+let g:closetag_filenames = '*.html,*.eex,*.erb'
+
+" Close any <tag> with </tag> in these files (even tags like <br>)
+let g:closetag_xhtml_filenames = '*.xml,*.xhtml,*.jsx'
+
 " It is nice to have the mouse working
 set mouse=a
 
