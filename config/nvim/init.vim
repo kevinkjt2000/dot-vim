@@ -54,10 +54,12 @@ augroup AleGroup
 augroup END
 
 func! TouchOpenFile()
-	let g:ale_enabled = 0
-	sleep 500m
-	w
-	let g:ale_enabled = 1
+	if &ft == 'elixir'
+		let g:ale_enabled = 0
+		sleep 500m
+		w
+		let g:ale_enabled = 1
+	endif
 endfunc
 
 " Configure vim-closetag to also work for languages like ruby and elixir
