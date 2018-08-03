@@ -30,9 +30,7 @@ augroup END
 " Cool colors!! (requires a 24-bit terminal)
 set termguicolors
 syntax enable
-silent! colorscheme solarized8_dark
-set t_8f=[38;2;%lu;%lu;%lum
-set t_8b=[48;2;%lu;%lu;%lum
+silent! colorscheme tender
 
 " ALE options
 let g:ale_linters = {
