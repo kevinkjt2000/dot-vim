@@ -98,12 +98,8 @@ set wrap                        " Wrap lines
 
 set wildmenu                    " Visual autocompete for command menu
 set wildmode=list:longest       " Make <TAB> complete only up the point of ambiguity
-set wildignore=*.o,*~,*.pyc     " Ignore some files
-if has("win16") || has("win32")
-	set wildignore+=.git\*,.hg\*,.svn\*,.DS_Store\*
-else
-	set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store/*
-endif
+set wildignore+=*.o,*~,*.pyc    " Ignore some files
+set wildignore+=*/.DS_Store/*
 
 set lazyredraw     " Don't redraw while executing macros (good performance config)
 
