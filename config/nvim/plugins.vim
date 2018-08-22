@@ -15,6 +15,7 @@ call vundle#begin(s:plugin_path)
 	Plugin 'editorconfig/editorconfig-vim'
 	Plugin 'elixir-editors/vim-elixir'
 	Plugin 'fatih/vim-go'
+	Plugin 'vim-scripts/groovyindent-unix'
 	Plugin 'huawenyu/neogdb.vim'
 	Plugin 'idris-hackers/idris-vim'
 	Plugin 'jacoborus/tender.vim'
