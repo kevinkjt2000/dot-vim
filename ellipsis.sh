@@ -34,6 +34,10 @@ pkg.pull() {
 }
 
 update_ycm() {
-	"$VIM_ROOT/bundle/YouCompleteMe/install.py" --clang-completer --racer-completer --system-libclang --system-boost --gocode-completer
+	ycm_options=""
+	if utils.cmd_exists go; then
+		ycm_options="${ycm_options} --gocode-completer"
+	fi
+	"$VIM_ROOT/bundle/YouCompleteMe/install.py" --clang-completer --racer-completer --system-libclang --system-boost ${ycm_options}
 }
 
